@@ -1,0 +1,135 @@
+body{
+    background-image: url("../images/background4.jpg");
+    background-size:100% 100%;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 60%;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+ul{
+    list-style: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 80%;
+
+}
+ul li::before{
+    content: "\25E6";
+    color: white;
+    
+}
+a:hover{
+    color: skyblue  ;
+}
+h1{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color:white;
+    margin:50px 20% 30px 40px;
+}
+.navbar{
+    display:flex;
+    margin:0;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255,0.5);
+    
+}
+.navbar *{
+    margin:0px 20px 0px 20px;
+    padding:10px;
+}
+
+.container{
+    display:grid;
+    grid-template-rows:80px 1fr 2fr 1fr 1fr 1fr;
+    height: 100vh;
+}
+.highschool,.college-1,.college-2{
+    background-color: rgb(67, 155, 226,0.75);
+    width: 70%;
+    margin:20px 0px 20px 40px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+.qualification{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: large;
+}
+.project{
+    margin-top:30px;
+}
+.project>p{
+    margin-left:50px;
+    opacity: 80%;
+    display:inline;
+}
+.certification>p{
+    margin-left:50px;
+    opacity: 80%;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+@media screen and (max-width:480px)
+{
+    body{
+        background-size: cover;
+        width:100%;
+        height:100%;
+        font-size:60%;
+        margin:0;
+    }
+    h1{
+        margin:30px 20% 10px 40px;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .navbar *{
+        margin:10px;
+        padding:5px;
+    }
+    .highschool,.college-1,.college-2{
+        width:80%;
+        height:60%;
+        padding:10px;
+        margin-left:30px;
+        align-items: start;
+       
+    }
+    .qualification{
+        display:flex;
+        font-size: x-small;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+        margin:0px 30px 0 0px;
+       
+    }
+    .project{
+        margin-top:0px;
+    }
+    footer{
+        margin-top:50px;
+    }
+}
+
