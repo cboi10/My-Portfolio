@@ -37,6 +37,7 @@ body{
 }
 .intro-space{
     font-size: large;
+    font-display: swap;
     padding-top: 15%;
     display: flex;
     flex-direction: column;
